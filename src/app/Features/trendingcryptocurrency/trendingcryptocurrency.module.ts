@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 import { TrendingcryptocurrencyRoutingModule } from './trendingcryptocurrency-routing.module';
 import { TrendingcryptocurrencyComponent } from './trendingcryptocurrency.component';
 import { RouterModule } from '@angular/router';
+import { CardComponent } from './Components/card/card.component';
+import { BorderglowModule } from '../../../app/Shared/borderglow/borderglow.module';
+import { CardComponentModule } from './Components/card/card.module';
 
 
 @NgModule({
@@ -11,6 +14,8 @@ import { RouterModule } from '@angular/router';
     TrendingcryptocurrencyComponent
   ],
   imports: [
+    BorderglowModule,
+    CardComponentModule,
     CommonModule,
     TrendingcryptocurrencyRoutingModule
   ],
