@@ -1,0 +1,17 @@
+<div class="crypto-page">
+    <button routerLink="/">Home</button>
+    <div class="listt">
+        <div *ngFor="let coin of crypto$ | async" class="item">
+            <img src="{{coin.item.small}}" alt="">
+            {{coin.item.name}}
+            {{ coin.item.market_cap_rank}}
+        </div>
+    </div>
+
+    <div class="listt">
+        <div *ngFor="let nft of nfts$ | async" class="item">
+            <img src="{{nft.thumb}}" alt="">
+            {{nft.name}}
+        </div>
+    </div>
+</div>
